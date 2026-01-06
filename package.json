@@ -6,21 +6,51 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "next": "^16.1.1",
+    "postcss": "8.4.33",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.12.0",
+    "tailwindcss": "3.4.0",
+    "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@tailwindcss/typography": "0.5.10",
+    "@typescript-eslint/eslint-plugin": "6.15.0",
+    "@typescript-eslint/parser": "6.15.0"
+  },
+  "description": "A responsive, dark-themed landing page for a mobile app with iOS and Android support, featuring social links and coming soon states.",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "landing-page",
+    "mobile-app",
+    "responsive-design",
+    "dark-theme"
+  ],
+  "author": "Mohammad9473",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mohammad9473/iHealth_web_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mohammad9473/iHealth_web_app/issues"
+  },
+  "homepage": "https://ihealth-web-landing.vercel.app",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
