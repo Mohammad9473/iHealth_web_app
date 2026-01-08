@@ -53,12 +53,12 @@ export default function Footer() {
         </div>
         <div className="text-center mt-8">
           <ComingSoonBadge />
-          <p className="text-gray-500 text-sm mt-2">
+          <p className="text-white text-sm mt-2">
             Currently in development • Expected launch: Spring 2026
           </p>
         </div>
 
-        <div className="mt-8 pt-8 text-center text-gray-500">
+        <div className="mt-8 pt-8 text-center text-white">
           <p className="flex items-center justify-center">
             Made with <FaHeart className="mx-2 text-red-500" /> by Reza
           </p>

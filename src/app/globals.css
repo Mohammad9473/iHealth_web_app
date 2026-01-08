@@ -3,8 +3,30 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-gradient-purple;
+    /* Prevent bounce/overscroll in Safari */
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
   body {
     @apply bg-gradient-purple text-white min-h-screen;
+    /* Ensure body covers the entire viewport */
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    /* Prevent text size adjustment */
+    -webkit-text-size-adjust: 100%;
+    /* Smooth scrolling */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Fix for iOS Safari 100vh issue */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      min-height: -webkit-fill-available;
+    }
   }
 }
 
@@ -19,5 +41,27 @@
 
   .gradient-text {
     @apply bg-gradient-to-r from-purple-300 via-purple-200 to-purple-100 bg-clip-text text-transparent;
+  }
+
+  /* Safe area padding for iPhone notch */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .min-h-screen-ios {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
 }

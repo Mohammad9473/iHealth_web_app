@@ -1,0 +1,21 @@
+{
+  "name": "iHealthSync - Health Tracking App",
+  "short_name": "iHealthSync",
+  "description": "Track biometrics, calories, workouts, and get personalized meal plans",
+  "theme_color": "#1a0b2e",
+  "background_color": "#1a0b2e",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "512x512"
+    }
+  ]
+}

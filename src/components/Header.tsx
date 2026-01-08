@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin, FaBriefcase } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-lg bg-black/50 border-b border-gray-800">
-      <div className="container mx-auto px-4 py-4">
+    <header className="sticky top-0 z-50 glass-effect safe-top">
+      <div className="container mx-auto px-4 py-4 safe-left safe-right">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img

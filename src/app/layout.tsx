@@ -57,6 +57,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* iOS specific meta tags */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="HealthSync" />
+
+        {/* Theme color for mobile browsers */}
+        <meta
+          name="theme-color"
+          content="#1a0b2e"
+          media="(prefers-color-scheme: dark)"
+        />
+        <meta name="theme-color" content="#1a0b2e" />
+
+        {/* PWA meta tags */}
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="HealthSync" />
+
+        {/* Viewport with proper iOS support */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
+
+        {/* iOS icons */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="/apple-startup.png" />
+
+        {/* PWA manifest */}
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
