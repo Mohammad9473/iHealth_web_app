@@ -7,7 +7,7 @@ import BetaSignup from "@/components/BetaSignup";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div className="min-h-screen">
       <Header />
       <main className="container mx-auto px-4">
         <HeroSection />
