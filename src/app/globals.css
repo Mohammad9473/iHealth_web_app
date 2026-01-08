@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-purple text-white min-h-screen;
+    @apply bg-gradient-purple text-white h-full;
   }
 }
 
